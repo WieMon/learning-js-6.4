@@ -13,15 +13,15 @@ const addOptions = (e) => {
   options.push(input.value);
   
   if (input.value.length) {
-    alert(options);
-    input.value = "";
+    alert(`Added option: ${input.value}`);
+    input.value = '';
   }
 }
 
 const cleanOptions = (e) => {
   e.preventDefault();
   options.length = 0;  //only if we want to remove all items from the array
-  //h1.textContent = '';
+  h1.textContent = '';
   //input.value = "";
 }
 
